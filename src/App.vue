@@ -28,7 +28,7 @@ export default {
     fetchData() {
       var self = this;
 
-      var fireRef = firebase.firestore().collection('test-collection');
+      var fireRef = firebase.firestore().collection('test-data');
 
       fireRef.get().then((docs) => {
         docs.forEach((doc) => {
